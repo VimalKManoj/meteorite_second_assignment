@@ -26,7 +26,7 @@ function SignUp() {
   //   const defaultRole = "sailor";
   //   const defaultConfirmed = true;
 
-  const [register, { data, loading, error }] = useMutation(REGISTER_MUTATION);
+  const [register, { loading, error }] = useMutation(REGISTER_MUTATION);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

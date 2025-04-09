@@ -21,7 +21,7 @@ function LoginPage() {
   const router = useRouter();
   const [identifier, setIdentifier] = useState("test@gmail.com");
   const [password, setPassword] = useState("1234567989");
-  const [login, { data, loading, error }] = useMutation(LOGIN_MUTATION);
+  const [login, { loading, error }] = useMutation(LOGIN_MUTATION);
 
   useEffect(() => {
     const jwt = localStorage.getItem("jwt");
